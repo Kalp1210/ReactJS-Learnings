@@ -76,7 +76,7 @@ const Project03 = () => {
                 className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg"
                 // onClick={convert}
               >
-                Convert {from.toString().toUpperCase()} To{" "}
+                Convert Dumb Kalp{from.toString().toUpperCase()} To Dumber Kalp
                 {to.toString().toUpperCase()}
               </button>
             </form>
