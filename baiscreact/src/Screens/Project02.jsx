@@ -25,8 +25,13 @@ const Project02 = () => {
   }, [length, number, charAllow, setPassword]);
 
   const CopyPassword = useCallback(() => {
+    // yeh niche wala text highlight kar deta hai
     passwordRef.current?.select();
 
+    // yeh niche wala range bata ta hai ki kitna select karna hai
+    passwordRef.current?.setSelectionRange(0, length);
+
+    // yeh copy karne ke liye
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
@@ -48,7 +53,7 @@ const Project02 = () => {
           ref={passwordRef}
         />
         <button
-          className=" outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 rounded-r-xl"
+          className=" outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 rounded-r-xl hover:bg-blue-600"
           onClick={CopyPassword}
         >
           Copy
