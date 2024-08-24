@@ -3,7 +3,7 @@ import Project01 from "./Screens/Project01";
 import Project02 from "./Screens/Project02";
 import Project03 from "./Screens/Project03";
 import Project04 from "./Screens/Project04";
-
+import Project05 from "./Screens/Project05";
 function App() {
   return (
     <div className="App">
@@ -12,7 +12,8 @@ function App() {
       {/* <Project01 /> */}
       {/* <Project02 /> */}
       {/* <Project03 /> */}
-      <Project04 />
+      {/* <Project04 /> */}
+      <Project05 />
     </div>
   );
 }
