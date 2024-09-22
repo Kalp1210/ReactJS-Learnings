@@ -5,6 +5,7 @@ import Project03 from "./Screens/Project03";
 import Project04 from "./Screens/Project04";
 import Project05 from "./Screens/Project05";
 import Project06 from "./Screens/Project06";
+import Project07 from "./Screens/Project07";
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,8 @@ function App() {
       {/* <Project03 /> */}
       {/* <Project04 /> */}
       {/* <Project05 /> */}
-      <Project06 />
+      {/* <Project06 /> */}
+      <Project07 />
     </div>
   );
 }

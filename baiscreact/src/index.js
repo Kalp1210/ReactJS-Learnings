@@ -9,6 +9,13 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+
+//==================================
+//           PROJECT 07
+//==================================
+import { Provider } from "react-redux";
+import { Store } from "./app/project07/Store";
+
 // import Layout from "./Components/Project04/Layout";
 // import Home from "./Components/Project04/Home";
 // import About from "./Components/Project04/About";
