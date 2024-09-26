@@ -68,7 +68,6 @@ console.log("Appwrite service:: logout :: error", error);
 const authService = new AuthService();
 
 export default authService;
-.
 
 Currently, two official plugins are available:
 
