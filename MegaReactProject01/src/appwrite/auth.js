@@ -22,6 +22,8 @@ export class AuthService {
       if (userAccount) {
         // call another method
         // like sign up ke baad wapas login karana hai ya phir direct app ke andar daal na hai
+
+        return this.login({ email, password });
       } else {
         return userAccount;
       }
@@ -32,9 +34,29 @@ export class AuthService {
 
   async login(email, password) {
     try {
-      await this.account.createEmailPasswordSession(email, password);
+      return await this.account.createEmailPasswordSession(email, password);
     } catch (error) {
       throw error;
+    }
+  }
+
+  async getCurrentUser(params) {
+    try {
+      return await this.account.get();
+    } catch (error) {
+      // throw error;
+      console.log("Appwrite service:: getCurrentUser :: error", error);
+    }
+
+    return null;
+  }
+
+  async logout() {
+    try {
+      // await this.account.deleteSession('current');
+      await this.account.deleteSessions();
+    } catch (error) {
+      console.log("Appwrite service:: logout :: error", error);
     }
   }
 }
