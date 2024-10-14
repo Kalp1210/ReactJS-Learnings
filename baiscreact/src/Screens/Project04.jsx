@@ -6,8 +6,8 @@ const Project04 = () => {
   return (
     <div>
       <p>Project04</p>
-      {/* <Header /> */}
-      {/* <Home />
+      {/* <Header />
+      <Home />
       <Footer /> */}
     </div>
   );

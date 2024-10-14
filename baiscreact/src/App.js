@@ -13,10 +13,12 @@ function App() {
 
       {/* <Project01 /> */}
       {/* <Project02 /> */}
-      <Project03 />
+      {/* <Project03 /> */}
       {/* <Project04 /> */}
       {/* <Project05 /> */}
       {/* <Project06 /> */}
+
+      {/* local store wala todo */}
       {/* <Project07 /> */}
     </div>
   );
