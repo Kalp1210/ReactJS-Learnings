@@ -9,15 +9,15 @@ import Project07 from "./Screens/Project07";
 function App() {
   return (
     <div className="App">
-      <h2 className="text-center">CHAI AUR REACT</h2>
+      {/* <h2 className="text-center">CHAI AUR REACT</h2> */}
 
       {/* <Project01 /> */}
       {/* <Project02 /> */}
-      {/* <Project03 /> */}
+      <Project03 />
       {/* <Project04 /> */}
       {/* <Project05 /> */}
       {/* <Project06 /> */}
-      <Project07 />
+      {/* <Project07 /> */}
     </div>
   );
 }
