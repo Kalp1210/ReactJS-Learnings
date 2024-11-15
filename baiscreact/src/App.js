@@ -14,7 +14,7 @@ function App() {
       {/* <Project01 /> */}
       {/* <Project02 /> */}
       {/* <Project03 /> */}
-      {/* <Project04 /> */}
+      <Project04 />
       {/* <Project05 /> */}
       {/* <Project06 /> */}
 

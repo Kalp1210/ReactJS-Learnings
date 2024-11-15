@@ -16,38 +16,38 @@ import {
 import { Provider } from "react-redux";
 import { Store } from "./app/project07/Store";
 
-// import Layout from "./Components/Project04/Layout";
-// import Home from "./Components/Project04/Home";
-// import About from "./Components/Project04/About";
-// import Contact from "./Components/Project04/Contact";
-// import User from "./Components/Project04/User";
-// import Github, { githubInfoLoader } from "./Components/Project04/Github";
+import Layout from "./Components/Project04/Layout";
+import Home from "./Components/Project04/Home";
+import About from "./Components/Project04/About";
+import Contact from "./Components/Project04/Contact";
+import User from "./Components/Project04/User";
+import Github, { githubInfoLoader } from "./Components/Project04/Github";
 
 //=================================
 //        **PROJECT 04**
 //=================================
 
 // this is thoda sa harder method for router
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Layout />,
-//     children: [
-//       {
-//         path: "",
-//         element: <Home />,
-//       },
-//       {
-//         path: "about",
-//         element: <About />,
-//       },
-//       {
-//         path: "contact",
-//         element: <Contact />,
-//       },
-//     ],
-//   },
-// ]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+    ],
+  },
+]);
 
 //  thoda simpler method for router
 
@@ -67,7 +67,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    {/* <RouterProvider router={router} /> */}
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
