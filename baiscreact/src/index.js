@@ -27,27 +27,27 @@ import Github, { githubInfoLoader } from "./Components/Project04/Github";
 //        **PROJECT 04**
 //=================================
 
-// this is thoda sa harder method for router
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "",
-        element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "contact",
-        element: <Contact />,
-      },
-    ],
-  },
-]);
+// // this is thoda sa harder method for router
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Layout />,
+//     children: [
+//       {
+//         path: "",
+//         element: <Home />,
+//       },
+//       {
+//         path: "about",
+//         element: <About />,
+//       },
+//       {
+//         path: "contact",
+//         element: <Contact />,
+//       },
+//     ],
+//   },
+// ]);
 
 //  thoda simpler method for router
 
@@ -67,7 +67,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
   </React.StrictMode>
 );
 
